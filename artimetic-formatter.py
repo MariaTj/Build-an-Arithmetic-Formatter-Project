@@ -3,10 +3,11 @@ def arithmetic_arranger(problems, show_answers=False):
     bottom_line = []
     dashes_line = []
     answers_line = []
+    
     if len(problems) > 5:
         return "Error: Too many problems."
+    
     for problem in problems:
-        
         parts = problem.split(' ')
         first, operator, second = parts
         
@@ -19,7 +20,6 @@ def arithmetic_arranger(problems, show_answers=False):
         if len(first) > 4  or len(second) > 4:
             return('Error: Numbers cannot be more than four digits.')
 
-        right_aligned = problem.rjust(4)
         width = max(len(first), len(second)) + 2
 
         top_line.append(first.rjust(width))
