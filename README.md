@@ -16,10 +16,10 @@ The function will return the correct conversion if the supplied problems are pro
     - There should be dashes at the bottom of each problem. The dashes should run along the entire length of each problem individually. 
 
 ## Example of output: 
+By default, `show_answers` is set to `False` in the function, if you want to show the answers; change `show_answer = False` to `show_answer = True`.
 
  ```
     32      3801      45      123
 + 698    -    2    + 43    +  49
 -----    ------    ----    -----
   730      3799      88      172
-  
